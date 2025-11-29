@@ -10,15 +10,18 @@ The goal of this project is to predict whether a customer is likely to churn (ca
 ```
 Churn-Prediction-System/
 │
-├── app.py                  # Streamlit App
-├── requirements.txt        # Dependencies
+├── data/
+│ └── Telco_Customer_Churn_Dataset.csv
 │
 ├── models/
 │ ├── xgb_churn_model.pkl   # Trained XGBoost model
 │ ├── scaler.pkl            # Standard Scaler
-│ └── feature_names.pkl     # List of all feature column names after preprocessing
+│ └── feature_names.pkl     # List of features names
 │
-└── churn_modeling.ipynb    # Jupyter notebook with data cleaning, EDA, model training & evaluation
+├── .gitignore              # gitignore file
+├── main.ipynb              # Jupyter notebook with data cleaning, EDA, model training & evaluation
+├── main.py                 # Streamlit App
+└── requirements.txt        # Dependencies
 ```
 ## Results
 
