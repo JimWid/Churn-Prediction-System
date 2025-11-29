@@ -67,3 +67,4 @@ The trained XGBoost model in xgb_churn_model.pkl makes the prediction — either
 
 #### Video Showcasing Deployed Streamlit App:
 
+https://github.com/JimWid/Churn-Prediction-System/issues/1
