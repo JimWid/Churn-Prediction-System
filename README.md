@@ -10,16 +10,15 @@ The goal of this project is to predict whether a customer is likely to churn (ca
 ```
 Churn-Prediction-System/
 │
-├── app.py # Streamlit application to input customer data & predict churn
-├── requirements.txt # Python dependencies
+├── app.py                  # Streamlit App
+├── requirements.txt        # Dependencies
 │
-├── models/ # Saved artifacts for deployment
-│ ├── xgb_churn_model.pkl # Trained XGBoost model
-│ ├── scaler.pkl # StandardScaler used to scale numeric features
-│ └── feature_names.pkl # List of all feature column names after preprocessing
+├── models/
+│ ├── xgb_churn_model.pkl   # Trained XGBoost model
+│ ├── scaler.pkl            # Standard Scaler
+│ └── feature_names.pkl     # List of all feature column names after preprocessing
 │
-├── notebooks/ # (Optional) Notebooks used for EDA and model development
-│ └── churn_modeling.ipynb # Jupyter notebook with data cleaning, EDA, model training & evaluation
+└── churn_modeling.ipynb    # Jupyter notebook with data cleaning, EDA, model training & evaluation
 ```
 ## Results
 
@@ -61,22 +60,7 @@ Categorical features (Contract, PaymentMethod, etc.) are one-hot encoded, and th
 
 The trained XGBoost model in xgb_churn_model.pkl makes the prediction — either churn (1) or no churn (0) — and returns a probability score.
 
-# What You Can Do
-
-Use the Streamlit app to experiment with different customer profiles and study which factors influence churn.
-
-Retrain the model on new data (update dataset, preprocessing, or model hyperparameters) to improve performance.
-
-Integrate the model into a production environment (e.g. as a REST API) instead of using Streamlit — making it accessible from other services.
-
 # Demo
 
-A video walkthrough of this deployed project will be added here soon — showcasing:
+#### Video Showcasing Deployed Streamlit App:
 
-Using the Streamlit app
-
-Example predictions
-
-Explanation of predictions (input → output)
-
-Model performance summary and comparison
