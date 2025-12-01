@@ -67,3 +67,6 @@ The trained XGBoost model in xgb_churn_model.pkl makes the prediction — either
 
 #### Video Showcasing Deployed Streamlit App:
 
+https://github.com/user-attachments/assets/847249c6-7076-4807-9fa1-8ac217cf3ac7
+
+
