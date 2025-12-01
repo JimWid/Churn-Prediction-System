@@ -78,9 +78,9 @@ if submit_button:
 
     # Left column: prediction result
     if prediction == 1:
-        left.metric(label="Churn Prediction", delta="Likely", delta_color="inverse", value=f"{prediction_proba:.2f}")
+        left.metric(label="Churn Prediction", delta="Likely", delta_color="inverse", value=f"{100*prediction_proba:.2f}%")
     else:
-        left.metric(label="Churn Prediction", delta="Unlikely", value=f"{prediction_proba:.2f}")
+        left.metric(label="Churn Prediction", delta="Unlikely", value=f"{100*prediction_proba:.2f}%")
 
     # Right column: Input summary
     with right:
